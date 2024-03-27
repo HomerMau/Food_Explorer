@@ -19,7 +19,7 @@ export default createGlobalStyle`
     outline: none;
   }
 
-  button  {
+  button, h2  {
   font-family: "Poppins", sans-serif;
     outline: none;
   }
