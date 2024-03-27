@@ -14,13 +14,24 @@ export default createGlobalStyle`
     color: ${({ theme }) => theme.COLORS.WHITE_100};
   }
 
+  body, input, textarea {
+    font-family: 'Roboto', serif;
+    outline: none;
+  }
+
+  button  {
+  font-family: "Poppins", sans-serif;
+    outline: none;
+  }
+
+
   a {
     text-decoration: none;
   }
 
   button, a {
     cursor: pointer;
-    transition: filter 0.2;
+    transition: filter 0.2s;
   }
 
     button:hover, a:hover {
