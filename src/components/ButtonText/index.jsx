@@ -6,7 +6,8 @@ export function ButtonText() {
   
 
   return (
-    <Container>
+    <Container
+      type="button">
       <img src={CaretLeft} alt="Botão de voltar" />
       <h2>voltar</h2>
     </Container>

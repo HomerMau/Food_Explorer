@@ -39,10 +39,10 @@ export const FoodDescription = styled.div`
       font-weight: 500;
 
       font-size: 2.7rem;
-      margin-bottom: 1.6rem;
     }
 
     h3 {
+      margin-top: 1.6rem;
       font-weight: 400;
       text-align: center;
 
@@ -58,6 +58,16 @@ export const FoodDescription = styled.div`
 
       gap: 2.4rem;
       justify-content: center;
+    }
+
+    .options {
+
+      display: flex;
+      gap: 1.6rem;
+
+      h1 {
+        font-family: Roboto;
+      }
     }
   }
 `

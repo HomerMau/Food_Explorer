@@ -5,6 +5,7 @@ import { ButtonText } from "../../components/ButtonText"
 import { Tag } from "../../components/Tag"
 import { Button } from "../../components/Button"
 import { Footer } from "../../components/Footer"
+import { Stepper } from "../../components/Stepper"
 
 import ravanello from "../../assets/imgs/ravanello.png"
 
@@ -30,7 +31,10 @@ export function Dish() {
               <Tag title="Alface" />
               <Tag title="Alface" />
             </div>
-            <Button title="Editar prato" />
+            <div className="options">
+              <Stepper quantityOfItems={2} />
+              <Button title="Editar prato" />
+            </div>
           </div>
         </FoodDescription>
       </main>
