@@ -51,12 +51,13 @@ export const FoodDescription = styled.div`
     }
 
     .tags {
-      margin: 2.4rem;
+      padding: 2.4rem;
 
       display: flex;
       flex-wrap: wrap;
 
       gap: 2.4rem;
+      justify-content: center;
     }
   }
 `
