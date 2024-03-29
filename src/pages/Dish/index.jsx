@@ -1,7 +1,7 @@
 import { Container, FoodDescription } from "./styles"
 
 import { Header } from "../../components/Header"
-import { GoBack } from "../../components/GoBack"
+import { ButtonText } from "../../components/ButtonText"
 import { Tag } from "../../components/Tag"
 import { Button } from "../../components/Button"
 import { Footer } from "../../components/Footer"
@@ -15,7 +15,7 @@ export function Dish() {
 
       <main>
         <FoodDescription>
-          <GoBack />
+          <ButtonText />
           <img src={ravanello} alt="Salada Ravanello" className="prato" />
           <div className="description">
             <h1>Salada Ravanello</h1>
