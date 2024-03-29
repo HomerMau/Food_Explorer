@@ -2,11 +2,10 @@ import styled from "styled-components";
 
 export const Container = styled.span`
 
-  font-size: 12px;
-  padding: 5px 14px;
-  border-radius: 5px;
-  margin-right: 6px;
-  color: ${({ theme }) => theme.COLORS.BACKGROUND_900};
-  background-color: ${({ theme }) => theme.COLORS.ORANGE};
+  font-size: 1.4rem;
+  padding: 0.4rem 0.8rem;
+  border-radius: 0.5rem;
+  color: ${({ theme }) => theme.COLORS.WHITE_100};
+  background-color: ${({ theme }) => theme.COLORS.BACKGROUND_1000};
 
 `;

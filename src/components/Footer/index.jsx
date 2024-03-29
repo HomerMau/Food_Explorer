@@ -15,7 +15,7 @@ export function Footer() {
       </Brand>
 
       <Credits>
-        <p>© 2023 - Todos os direitos reservados.</p>
+        <p>© 2024 - Todos os direitos reservados.</p>
       </Credits>
     </Container>
   )
