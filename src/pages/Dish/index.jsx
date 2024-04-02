@@ -21,7 +21,7 @@ export function Dish() {
 
   return (
     <Container>
-      <Header quantityOfItens={0} />
+      <Header quantityOfItens={0}/>
 
       <main>
         <FoodDescription>

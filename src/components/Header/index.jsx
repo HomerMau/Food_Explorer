@@ -10,6 +10,9 @@ import logo from "../../assets/logo.svg"
 export function Header({ $isadmin, quantityOfItens, ...rest }) {
   return (
     <Container $isadmin={$isadmin}>
+
+      <div className="navBar">
+
       <CiMenuBurger />
 
       <Brand>
@@ -26,6 +29,7 @@ export function Header({ $isadmin, quantityOfItens, ...rest }) {
           {quantityOfItens}
         </div>
       </Receipt>
+      </div>
     </Container>
   )
 }

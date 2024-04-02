@@ -5,17 +5,19 @@ export const Container = styled.div`
 
   background-color: ${({ theme }) => theme.COLORS.BACKGROUND_600};
 
-  display: flex;
+  .navBar {
+    display: flex;
 
-  align-items: center;
+    align-items: center;
 
-  justify-content: space-around;
+    justify-content: center;
+  }
 
   svg {
     width: 2.4rem;
     height: 2.4rem;
 
-    color: ${({ theme }) => theme.COLORS.WHITE_100 };
+    color: ${({ theme }) => theme.COLORS.WHITE_100};
 
     background: none;
     border: none;
@@ -26,6 +28,8 @@ export const Brand = styled.div`
   display: flex;
   gap: 0.8rem;
   font-size: 1.1rem;
+
+  padding: 0 6.2rem;
 
   h1 {
     color: ${({ theme }) => theme.COLORS.WHITE_100};
