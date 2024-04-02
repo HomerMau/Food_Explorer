@@ -8,8 +8,17 @@ import { Footer } from "../../components/Footer"
 import { Stepper } from "../../components/Stepper"
 
 import ravanello from "../../assets/imgs/ravanello.png"
+import { PiReceipt } from "react-icons/pi"
+
 
 export function Dish() {
+  let price = 25.59
+  let localizedPrice = price.toLocaleString("pt-BR", {
+    minimumFractionDigits: 2,
+  })
+
+
+
   return (
     <Container>
       <Header quantityOfItens={0} />
@@ -33,7 +42,7 @@ export function Dish() {
             </div>
             <div className="options">
               <Stepper quantityOfItems={2} />
-              <Button title="Editar prato" />
+              <Button icon={PiReceipt} title={`pedir ∙ R$ ${localizedPrice}`} />
             </div>
           </div>
         </FoodDescription>

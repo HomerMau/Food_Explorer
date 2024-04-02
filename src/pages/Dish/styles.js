@@ -62,8 +62,10 @@ export const FoodDescription = styled.div`
 
     .options {
 
+      margin: 2rem 0 5.4rem;
+
       display: flex;
-      gap: 1.6rem;
+      gap: 2.6rem;
 
       h1 {
         font-family: Roboto;
