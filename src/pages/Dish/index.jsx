@@ -11,20 +11,19 @@ import ravanello from "../../assets/imgs/ravanello.png"
 import { PiReceipt } from "react-icons/pi"
 
 
-export function Dish() {
+export function Dish({ $isadmin = false, ...rest }) {
+  // Teste de preço
   let price = 25.59
   let localizedPrice = price.toLocaleString("pt-BR", {
     minimumFractionDigits: 2,
   })
 
-
-
   return (
-    <Container>
-      <Header quantityOfItens={0}/>
+    <Container $isadmin={$isadmin} {...rest}>
+      <Header quantityOfItens={0} $isadmin={$isadmin} />
 
       <main>
-        <FoodDescription>
+        <FoodDescription $isadmin={$isadmin}>
           <ButtonText />
           <img src={ravanello} alt="Salada Ravanello" className="prato" />
           <div className="description">
@@ -41,8 +40,14 @@ export function Dish() {
               <Tag title="Alface" />
             </div>
             <div className="options">
-              <Stepper quantityOfItems={2} />
-              <Button icon={PiReceipt} title={`pedir ∙ R$ ${localizedPrice}`} />
+              {$isadmin ? "" : <Stepper quantityOfItems={2} />}
+
+              <Button
+                icon={$isadmin ? "" : PiReceipt}
+                title={
+                  $isadmin ? "Editar prato" : `pedir ∙ R$ ${localizedPrice}`
+                }
+              />
             </div>
           </div>
         </FoodDescription>

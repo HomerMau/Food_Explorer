@@ -1,18 +1,14 @@
-import styled from 'styled-components';
+import styled from "styled-components"
 
 export const Container = styled.div`
-  
-
-
   main {
-
     margin-top: 3.6rem;
 
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-  `;
+`
 
 export const FoodDescription = styled.div`
   display: flex;
@@ -61,16 +57,20 @@ export const FoodDescription = styled.div`
     }
 
     .options {
-
       margin: 2rem 0 5.4rem;
 
       display: flex;
       gap: 2.6rem;
 
-      h1 {
-        font-family: Roboto;
+      button {
+        padding: ${({ $isadmin }) =>
+          $isadmin == true ? "1.2rem 11.2rem" : "0.8rem 4.06rem"};
+
+        h1 {
+          font-size: ${({ $isadmin }) =>
+            $isadmin == true ? "1.4rem" : "0.9rem"};
+        }
       }
     }
   }
 `
-

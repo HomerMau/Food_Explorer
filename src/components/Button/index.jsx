@@ -1,14 +1,14 @@
 import { Container } from './styles';
 
+// eslint-disable-next-line react/prop-types
 export function Button({icon: Icon, title, ...rest}) {
 
-  return(
+  return (
     <Container {...rest}>
-     <button>
-      {Icon && <Icon size={20} />}
-
-      {title}     
-     </button>
+      <button type="button">
+        {Icon && <Icon size={20} />}
+        <h1>{title}</h1>
+      </button>
     </Container>
   )
 }

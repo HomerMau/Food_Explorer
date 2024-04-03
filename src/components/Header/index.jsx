@@ -9,26 +9,24 @@ import logo from "../../assets/logo.svg"
 
 export function Header({ $isadmin, quantityOfItens, ...rest }) {
   return (
-    <Container $isadmin={$isadmin}>
-
+    <Container $isadmin={$isadmin} {...rest}>
       <div className="navBar">
+        <CiMenuBurger />
 
-      <CiMenuBurger />
+        <Brand>
+          <img src={logo} alt="Logo da Food Explorer" />
+          <Admin>
+            <h1>food explorer</h1>
+            {$isadmin ? <h4>admin</h4> : ""}
+          </Admin>
+        </Brand>
 
-      <Brand>
-        <img src={logo} alt="Logo da Food Explorer" />
-        <Admin>
-          <h1>food explorer</h1>
-          {$isadmin ? <h4>admin</h4> : ""}
-        </Admin>
-      </Brand>
-
-      <Receipt $isadmin={$isadmin}>
-        <PiReceipt />
-        <div className="NumberOfItens" type="button">
-          {quantityOfItens}
-        </div>
-      </Receipt>
+        <Receipt $isadmin={$isadmin}>
+          <PiReceipt />
+          <div className="NumberOfItens" type="button">
+            {quantityOfItens}
+          </div>
+        </Receipt>
       </div>
     </Container>
   )
