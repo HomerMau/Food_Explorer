@@ -2,14 +2,14 @@ import { Container } from './styles';
 
 import CaretLeft from "../../assets/icons/CaretLeft.svg"
 
-export function ButtonText() {
+export function ButtonText({ title, icon, ...rest }) {
   
 
   return (
-    <Container
+    <Container {...rest}
       type="button">
-      <img src={CaretLeft} alt="Botão de voltar" />
-      <h2>voltar</h2>
+      <img src={icon} alt={title} />
+      <h2>{title}</h2>
     </Container>
   )
 }

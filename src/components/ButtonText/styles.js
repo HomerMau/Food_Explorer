@@ -7,17 +7,22 @@ export const Container = styled.button`
 
   max-width: 9.5rem;
 
-  
-border: none;
-background: none;
-color: ${({ theme }) => theme.COLORS.WHITE_100};
+  border: none;
+  background: none;
+  color: ${({ theme }) => theme.COLORS.WHITE_100};
 
+  img {
+    cursor: pointer;
+    transition: 200ms;
+  }
 
- > h2 {
+  img:hover {
+    opacity: 0.8;
+  }
+
+  > h2 {
     font-size: 2.4rem;
 
     font-weight: 400;
-
-    
   }
 `

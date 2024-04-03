@@ -6,8 +6,11 @@ import { Tag } from "../../components/Tag"
 import { Button } from "../../components/Button"
 import { Footer } from "../../components/Footer"
 import { Stepper } from "../../components/Stepper"
+import { SideMenu } from "../../components/SideMenu"
 
 import ravanello from "../../assets/imgs/ravanello.png"
+import CaretLeft from "../../assets/icons/CaretLeft.svg"
+
 import { PiReceipt } from "react-icons/pi"
 
 
@@ -20,11 +23,14 @@ export function Dish({ $isadmin = false, ...rest }) {
 
   return (
     <Container $isadmin={$isadmin} {...rest}>
+
+    <SideMenu   />
+
       <Header quantityOfItens={0} $isadmin={$isadmin} />
 
       <main>
         <FoodDescription $isadmin={$isadmin}>
-          <ButtonText />
+          <ButtonText title="Voltar"  icon={CaretLeft}/>
           <img src={ravanello} alt="Salada Ravanello" className="prato" />
           <div className="description">
             <h1>Salada Ravanello</h1>

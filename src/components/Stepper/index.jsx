@@ -9,7 +9,7 @@ export function Stepper({quantityOfItems, ...rest}) {
     <Container {...rest}>
       <img src={minus} alt="Botão de menos" className="minusButton" />
       <h1>0{quantityOfItems}</h1>
-      <img src={plus} alt="Botão de menos" className="plusButton" />
+      <img src={plus} alt="Botão de mais" className="plusButton" />
     </Container>
   )
 }
