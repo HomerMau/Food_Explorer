@@ -7,7 +7,7 @@ import { Tag } from "../../components/Tag"
 import { Button } from "../../components/Button"
 import { Footer } from "../../components/Footer"
 import { Stepper } from "../../components/Stepper"
-import { SideMenu } from "../../components/SideMenu"
+import { SideBar } from "../../components/SideBar"
 
 import ravanello from "../../assets/imgs/ravanello.png"
 import CaretLeft from "../../assets/icons/CaretLeft.svg"
@@ -24,7 +24,7 @@ export function Dish({ $isadmin = false, ...rest }) {
 
   return (
     <Container $isadmin={$isadmin} {...rest}>
-      <SideMenu $isadmin={$isadmin}>
+      <SideBar $isadmin={$isadmin}>
         <Header quantityOfItens={0} $isadmin={$isadmin} />
 
         <main>
@@ -59,7 +59,7 @@ export function Dish({ $isadmin = false, ...rest }) {
           </FoodDescription>
         </main>
         <Footer />
-      </SideMenu>
+      </SideBar>
     </Container>
   )
 }

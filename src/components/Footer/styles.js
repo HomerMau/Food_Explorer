@@ -16,6 +16,7 @@ export const Container = styled.div`
 export const Brand = styled.div`
   display: flex;
   gap: 0.8rem;
+  align-items: center;
 
   h1 {
     color: ${({ theme }) => theme.COLORS.WHITE_700};

@@ -8,7 +8,7 @@ import { Footer } from '../Footer'
 import close from '../../assets/icons/Close.svg'
 import search from "../../assets/icons/Search.svg"
 
-export function SideMenu($isadmin, ...rest) {
+export function SideBar({$isadmin, ...rest}) {
 
 
   return (
@@ -24,12 +24,9 @@ export function SideMenu($isadmin, ...rest) {
           />
 
           <Nav $isadmin={$isadmin}>
-
-
-            
             {console.log($isadmin)}
+            {$isadmin ? <a href="#">Novo prato</a> : ""}
             <a href="#">Sair</a>
-            
           </Nav>
         </main>
       </Menu>
