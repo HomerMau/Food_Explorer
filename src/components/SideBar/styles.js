@@ -1,7 +1,7 @@
 import styled from "styled-components"
 
 export const Container = styled.aside`
-  background-color: ${({ theme }) => theme.COLORS.BACKGROUND_100};
+  background-color: ${({ theme }) => theme.COLORS.BACKGROUND_400};
 
   position: absolute;
   z-index: 1;
