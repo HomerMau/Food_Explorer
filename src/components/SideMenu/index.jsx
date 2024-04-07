@@ -1,26 +1,37 @@
-import { Container, Menu, Nav } from './styles'
+import { Container, Header, Menu, Nav } from './styles'
 
 import { ButtonText } from '../ButtonText'
+import { Input } from '../Input'
 import { Footer } from '../Footer'
 
-import close from '../../assets/icons/Close.svg'
 
-export function SideMenu() {
+import close from '../../assets/icons/Close.svg'
+import search from "../../assets/icons/Search.svg"
+
+export function SideMenu($isadmin, ...rest) {
 
 
   return (
-    <Container>
+    <Container {...rest}>
+      <Header>
+        <ButtonText icon={close} title="Menu" />
+      </Header>
       <Menu>
-        <div className="header">
-          <ButtonText icon={close} title="Menu" />
-        </div>
+        <main>
+          <Input
+            placeholder="Busque por pratos ou ingredientes"
+            icon={search}
+          />
 
-        <Nav>
-          <a href="#">Sair</a>
-          <a href="#">Sair</a>
-          <a href="#">Sair</a>
-          <a href="#">Sair</a>
-        </Nav>
+          <Nav $isadmin={$isadmin}>
+
+
+            
+            {console.log($isadmin)}
+            <a href="#">Sair</a>
+            
+          </Nav>
+        </main>
       </Menu>
 
       <Footer />

@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import { Container, FoodDescription } from "./styles"
 
 import { Header } from "../../components/Header"
@@ -23,42 +24,42 @@ export function Dish({ $isadmin = false, ...rest }) {
 
   return (
     <Container $isadmin={$isadmin} {...rest}>
+      <SideMenu $isadmin={$isadmin}>
+        <Header quantityOfItens={0} $isadmin={$isadmin} />
 
-    <SideMenu   />
+        <main>
+          <FoodDescription $isadmin={$isadmin}>
+            <ButtonText title="Voltar" icon={CaretLeft} />
+            <img src={ravanello} alt="Salada Ravanello" className="prato" />
+            <div className="description">
+              <h1>Salada Ravanello</h1>
+              <h3>
+                Rabanetes, folhas verdes e molho agridoce salpicados com
+                gergelim.
+              </h3>
+              <div className="tags">
+                <Tag title="Alface" />
+                <Tag title="Alface" />
+                <Tag title="Alface" />
+                <Tag title="Alface" />
+                <Tag title="Alface" />
+                <Tag title="Alface" />
+              </div>
+              <div className="options">
+                {$isadmin ? "" : <Stepper quantityOfItems={2} />}
 
-      <Header quantityOfItens={0} $isadmin={$isadmin} />
-
-      <main>
-        <FoodDescription $isadmin={$isadmin}>
-          <ButtonText title="Voltar"  icon={CaretLeft}/>
-          <img src={ravanello} alt="Salada Ravanello" className="prato" />
-          <div className="description">
-            <h1>Salada Ravanello</h1>
-            <h3>
-              Rabanetes, folhas verdes e molho agridoce salpicados com gergelim.
-            </h3>
-            <div className="tags">
-              <Tag title="Alface" />
-              <Tag title="Alface" />
-              <Tag title="Alface" />
-              <Tag title="Alface" />
-              <Tag title="Alface" />
-              <Tag title="Alface" />
+                <Button
+                  icon={$isadmin ? "" : PiReceipt}
+                  title={
+                    $isadmin ? "Editar prato" : `pedir ∙ R$ ${localizedPrice}`
+                  }
+                />
+              </div>
             </div>
-            <div className="options">
-              {$isadmin ? "" : <Stepper quantityOfItems={2} />}
-
-              <Button
-                icon={$isadmin ? "" : PiReceipt}
-                title={
-                  $isadmin ? "Editar prato" : `pedir ∙ R$ ${localizedPrice}`
-                }
-              />
-            </div>
-          </div>
-        </FoodDescription>
-      </main>
-      <Footer />
+          </FoodDescription>
+        </main>
+        <Footer />
+      </SideMenu>
     </Container>
   )
 }
