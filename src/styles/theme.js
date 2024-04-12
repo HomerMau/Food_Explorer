@@ -30,5 +30,7 @@ export default {
 
     LIGHT_BLUE: "#82F3FF",
     DARK_BLUE: "#065E7C",
+
+    GRADIENTS_200: "linear-gradient(180deg, #091e26 0%, #00131c 100%)",
   },
 }
