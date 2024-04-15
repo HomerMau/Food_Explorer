@@ -5,14 +5,15 @@ export const Container = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
+    
   }
 `
 
 export const Marketing = styled.div`
-position: relative;
-overflow: hidden;
-
-`;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 4.8rem;
+`
 
 export const Rectangle = styled.div`
   margin: 4.4rem 4.4rem 0 4.4rem;
@@ -38,9 +39,11 @@ export const Rectangle = styled.div`
     opacity: 0.8;
 
     position: absolute;
+    
   }
 
   .marketing {
+    
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -65,3 +68,24 @@ export const Rectangle = styled.div`
     }
   }
 `
+ export const Cards = styled.div`
+
+   h2 {
+     color: ${({ theme }) => theme.COLORS.WHITE_300};
+
+     font-size: 1.8rem;
+     font-weight: 500;
+
+   }
+
+   h3 {
+     font-size: 1.2rem;
+     font-weight: 400;
+
+     line-height: 140%;
+   }
+ `
+ export const Scroll = styled.div`
+ display: flex;
+ gap: 1.6rem;
+ `;

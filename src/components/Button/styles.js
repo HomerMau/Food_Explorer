@@ -18,12 +18,16 @@ export const Container = styled.div`
 
     padding: 1.2rem 4.2rem;
 
-    
-    transition:  0.2s;
+    transition: 0.2s;
   }
 
   button:hover {
     background-color: ${({ theme }) => theme.COLORS.RED_400};
+  }
 
+  h1 {
+    color: ${({ theme }) => theme.COLORS.WHITE_100};
+    font-size: 1.4rem;
+    font-weight: 500;
   }
 `
