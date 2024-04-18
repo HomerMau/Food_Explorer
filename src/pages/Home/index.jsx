@@ -1,4 +1,4 @@
-import { Container, Rectangle, Marketing, Cards, Scroll  } from './styles'
+import { Container, Rectangle, Banner, Cards, Scroll  } from './styles'
 import { Header } from './../../components/Header/index';
 import { Card } from './../../components/Card/index';
 
@@ -16,7 +16,7 @@ export function Home({ $isadmin = false, ...rest }) {
     <Container $isadmin={$isadmin} {...rest}>
       <Header quantityOfItens={0} $isadmin={$isadmin} />
       <main>
-        <Marketing>
+        <Banner>
           <Rectangle>
             <img src={coloredHamburgues} alt="Comidas Deliciosas" />
             <div className="marketing">
@@ -24,7 +24,7 @@ export function Home({ $isadmin = false, ...rest }) {
               <h3>Sinta o cuidado do preparo com ingredientes selecionados.</h3>
             </div>
           </Rectangle>
-        </Marketing>
+        </Banner>
 
         <Cards>
           <h2>Refeições</h2>

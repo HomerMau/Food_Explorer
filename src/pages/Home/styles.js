@@ -9,7 +9,7 @@ export const Container = styled.div`
   }
 `
 
-export const Marketing = styled.div`
+export const Banner = styled.div`
   position: relative;
   overflow: hidden;
   margin-bottom: 4.8rem;
