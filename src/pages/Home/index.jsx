@@ -1,6 +1,7 @@
-import { Container, Rectangle, Banner, Cards, Scroll  } from './styles'
-import { Header } from './../../components/Header/index';
-import { Card } from './../../components/Card/index';
+import { Container, Rectangle, Banner, Cards  } from './styles'
+import { Header } from './../../components/Header';
+import { Card } from './../../components/Card';
+import { Carousel } from '../../components/Carousel';
 
 
 import coloredHamburgues from '../../assets/imgs/colored-Hamburgues.png'
@@ -29,31 +30,44 @@ export function Home({ $isadmin = false, ...rest }) {
         <Cards>
           <h2>Refeições</h2>
 
-          <Scroll>
-            <Card price={localizedPrice} quantityOfItems="1" title="incluir" />
-            <Card price={localizedPrice} quantityOfItems="1" title="incluir" />
-            <Card price={localizedPrice} quantityOfItems="1" title="incluir" />
-          </Scroll>
+          <Carousel
+            card={
+              <Card
+                price={localizedPrice}
+                quantityOfItems="1"
+                title="incluir"
+              />
+            }
+          />
         </Cards>
 
         <Cards>
           <h2>Pratos principais</h2>
 
-          <Scroll>
-            <Card price={localizedPrice} quantityOfItems="1" title="incluir" />
-            <Card price={localizedPrice} quantityOfItems="1" title="incluir" />
-            <Card price={localizedPrice} quantityOfItems="1" title="incluir" />
-          </Scroll>
+          <Carousel
+            card={
+              <Card
+                price={localizedPrice}
+                quantityOfItems="1"
+                title="incluir"
+              />
+            }
+          />
         </Cards>
 
         <Cards>
           <h2>Porções</h2>
 
-          <Scroll>
-            <Card price={localizedPrice} quantityOfItems="1" title="incluir" />
-            <Card price={localizedPrice} quantityOfItems="1" title="incluir" />
-            <Card price={localizedPrice} quantityOfItems="1" title="incluir" />
-          </Scroll>
+          <Carousel
+            card={
+              <Card
+                price={localizedPrice}
+                quantityOfItems="1"
+                title="incluir"
+              />
+            }
+          />
+
         </Cards>
       </main>
     </Container>

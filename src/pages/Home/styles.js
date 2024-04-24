@@ -85,7 +85,3 @@ export const Rectangle = styled.div`
      line-height: 140%;
    }
  `
- export const Scroll = styled.div`
- display: flex;
- gap: 1.6rem;
- `;

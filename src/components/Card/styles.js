@@ -10,7 +10,7 @@ export const Container = styled.div`
   flex-direction: column;
 
   border-radius: 0.8rem;
-  border: 0.1rem solid ${({ theme }) => theme.COLORS.BACKGROUND_300};
+  border: 1px solid ${({ theme }) => theme.COLORS.BACKGROUND_300};
 
   background-color: ${({ theme }) => theme.COLORS.BACKGROUND_200};
 
