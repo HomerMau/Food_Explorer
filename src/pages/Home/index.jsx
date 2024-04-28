@@ -5,6 +5,7 @@ import { Carousel } from '../../components/Carousel';
 
 
 import coloredHamburgues from '../../assets/imgs/colored-Hamburgues.png'
+import { Footer } from '../../components/Footer';
 
 
 
@@ -33,6 +34,7 @@ export function Home({ $isadmin = false, ...rest }) {
           <Carousel
             card={
               <Card
+                $isadmin={$isadmin}
                 price={localizedPrice}
                 quantityOfItems="1"
                 title="incluir"
@@ -47,6 +49,7 @@ export function Home({ $isadmin = false, ...rest }) {
           <Carousel
             card={
               <Card
+                $isadmin={$isadmin}
                 price={localizedPrice}
                 quantityOfItems="1"
                 title="incluir"
@@ -61,15 +64,16 @@ export function Home({ $isadmin = false, ...rest }) {
           <Carousel
             card={
               <Card
+                $isadmin={$isadmin}
                 price={localizedPrice}
                 quantityOfItems="1"
                 title="incluir"
               />
             }
           />
-
         </Cards>
       </main>
+      <Footer />
     </Container>
   )
 }

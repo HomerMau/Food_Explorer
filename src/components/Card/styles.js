@@ -30,9 +30,10 @@ export const Container = styled.div`
   main {
     align-items: center;
     gap: 1.2rem;
+    
 
     img.food {
-      margin-top: -1.5rem;
+      margin-top: ${({ $isadmin }) => ($isadmin ? "2.4rem" : "-1.5rem")};
 
       width: 8.8rem;
       height: 8.8rem;
@@ -45,10 +46,18 @@ export const Container = styled.div`
     }
 
     span {
+
+
       color: ${({ theme }) => theme.COLORS.LIGHT_BLUE};
 
       font-size: 1.6rem;
       font-style: normal;
+    }
+
+    .buttons {
+      display: ${({ $isadmin }) => ($isadmin ? "none" : "flex")};
+      flex-direction: column;
+      gap: 1.6rem;
     }
 
     button {
