@@ -23,7 +23,13 @@ export const Container = styled.div`
       width: 2.4rem;
       height: 2.2rem;
 
-      margin: 1.6rem 1.6rem 0 0;
+    }
+    
+    button {
+      margin: 1.4rem 1.4rem 0 0;
+      padding: 0.2rem 0.2rem 0 0;
+      border: none;
+      background: none;
     }
   }
 

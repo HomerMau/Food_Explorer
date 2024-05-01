@@ -14,9 +14,13 @@ export function Card({ $isadmin, price, quantityOfItems, title, ...rest }) {
     <Container $isadmin={$isadmin} {...rest}>
       <div className="favorites">
         {$isadmin ? (
+          <button>
           <img src={Pencil} alt="Editar o prato" />
+          </button>
         ) : (
+          <button>
           <img src={Heart} alt="Favoritos" />
+          </button>
         )}
       </div>
       <main>
