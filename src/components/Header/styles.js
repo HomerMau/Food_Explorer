@@ -2,6 +2,7 @@ import styled from "styled-components"
 
 export const Container = styled.div`
   padding: 5.6rem 0 2.4rem 0;
+  width: 100%;
 
   background-color: ${({ theme }) => theme.COLORS.BACKGROUND_600};
 

@@ -1,15 +1,11 @@
 /* eslint-disable react/prop-types */
 import { Container } from './styles'
 
-export function Input({ icon, ...rest }) {
-
-
+export function Input({ icon: Icon, ...rest }) {
   return (
     <Container>
-
-      <img src={icon} alt="Ícone de Pesquisa"></img>
-        <input {...rest} />
-
+      {Icon && <Icon size={20} />}
+      <input {...rest} />
     </Container>
   )
 }
